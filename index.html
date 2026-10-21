@@ -122,6 +122,32 @@
   .float-wa{position:fixed;right:16px;bottom:16px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(6,22,39,.35)}
   .float-wa svg{width:29px;height:29px;fill:#fff}
 </style>
+
+<style>
+/* Hero/header seating fix — owner 2026-10-21: elements compact, header 360px me pura fit */
+@media (max-width:680px){
+  .brand-mark{width:38px !important;height:38px !important;border-radius:10px}
+  .brand-name{font-size:.95rem !important}
+  .brand-sub{font-size:.55rem !important;letter-spacing:.18em !important}
+  header .nav{gap:8px !important}
+  header .brand{flex:1 1 auto;min-width:0}
+  header .btn.small{flex:none;padding:9px 12px !important;font-size:.82rem !important}
+  .hero{padding:26px 0 14px !important}
+  .hero-grid{gap:22px !important}
+  .hero h1{font-size:clamp(1.78rem,7.6vw,2.3rem) !important}
+  .hero p.lead{font-size:.97rem !important;margin:13px 0 18px !important}
+  .kicker{margin-bottom:12px !important}
+  .hero .btn{padding:12px 19px;font-size:.92rem}
+  .trust-row{margin-top:18px !important;gap:7px}
+  .trust{font-size:.75rem;padding:6px 10px}
+  section{padding:42px 0 !important}
+  .sec-head{margin-bottom:26px}
+}
+@media (max-width:430px){
+  .call-num{display:none}
+  header .btn.small{padding:10px 12px !important}
+}
+</style>
 </head>
 <body>
 
@@ -139,7 +165,7 @@
       <a href="#reviews">Reviews</a>
       <a href="#areas">Areas</a>
     </nav>
-    <a class="btn small navy" href="tel:+447578056580"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg> 07578 056 580</a>
+    <a class="btn small navy" href="tel:+447578056580"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg> <span class="call-num">07578 056 580</span></a>
   </div>
 </header>
 
