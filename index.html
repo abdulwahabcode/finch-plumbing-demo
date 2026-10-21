@@ -148,6 +148,16 @@
   header .btn.small{padding:10px 12px !important}
 }
 </style>
+
+<style>
+/* Root-cause fix 2026-10-21: .nav{padding:12px 0} .wrap ki side padding ko override kar raha tha — header kinaron se chipak raha tha */
+header .wrap{padding-left:20px;padding-right:20px}
+@media (max-width:680px){
+  .brand-mark{width:42px !important;height:42px !important}
+  header .btn.small{height:42px;padding-top:0 !important;padding-bottom:0 !important;display:inline-flex;align-items:center}
+  .brand{align-items:center}
+}
+</style>
 </head>
 <body>
 
